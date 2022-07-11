@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitleApp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="CHECK VALID DATE APP"
+        android:textSize="30sp"
+        android:background="#0F9D58"
+        android:textColor="#F1D416"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/txtTitleApp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtDay"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitleApp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="148dp"
+        android:layout_toRightOf="@id/txtDayTitle" />
+
+    <TextView
+        android:id="@+id/txtDayTitle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitleApp"
+        android:layout_marginTop="135dp"
+        android:gravity="center"
+        android:paddingTop="10pt"
+        android:text="Day:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtYearTitle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMonthTitle"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingTop="10pt"
+        android:text="Year:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/txtYear"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtMonth"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@id/txtYearTitle" />
+
+    <EditText
+        android:id="@+id/txtMonth"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDay"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@id/txtMonthTitle" />
+
+    <TextView
+        android:id="@+id/txtMonthTitle"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDayTitle"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:paddingTop="10pt"
+        android:text="Month:"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtYear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:onClick="checkValidDate"
+        android:text="CHECK" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:onClick="reset"
+        android:text="RESET" />
+
+</RelativeLayout>
